@@ -6,7 +6,7 @@ Create a function that
 		aaaaaabbbbbbcccefffff
 		
 Module Name:
-			StirngConversion.cpp
+		StirngConversion.cpp
 
 Abstract:
 		This module handles string conversion.
