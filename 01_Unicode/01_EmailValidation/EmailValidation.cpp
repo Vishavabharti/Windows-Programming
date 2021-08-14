@@ -15,10 +15,10 @@ Create embedded string, and read it.
 	The last string in buffer is followed by two NULL characters. 
 		
 Module Name:
-			EmailValidation.cpp
+		EmailValidation.cpp
 
 Abstract:
-			This module handles String operations ex; Email Validation and embedded String.
+		This module handles String operations ex; Email Validation and embedded String.
 	
 --*/
 
@@ -46,34 +46,34 @@ int main()
 		switch(iOption)
 		{
 			case 1 :
-					printf("Enter email : ");
-					fflush(stdin);
-					gets(String);
-					Length=strlen(String);
-					r= Email_Validation(String,Length);
-					if(1 == r)
-					{
-						printf(" Valid");
-					}
-					else
-					{
-						printf(" Invalid");
-					}
-					break;
+				printf("Enter email : ");
+				fflush(stdin);
+				gets(String);
+				Length=strlen(String);
+				r= Email_Validation(String,Length);
+				if(1 == r)
+				{
+					printf(" Valid");
+				}
+				else
+				{
+					printf(" Invalid");
+				}
+				break;
 			case 2 :
-					printf("Enter number of string to store in buffer: ");
-					scanf("%d",&string);
-					fflush(stdin);
-					r = Embedded_String(string, String);
-					if(1 == r)
-					{
-						printf("\nStrings are embedded");
-					}
-					else
-					{
-						printf("Strings are Not embedded");
-					}
-					break;
+				printf("Enter number of string to store in buffer: ");
+				scanf("%d",&string);
+				fflush(stdin);
+				r = Embedded_String(string, String);
+				if(1 == r)
+				{
+					printf("\nStrings are embedded");
+				}
+				else
+				{
+					printf("Strings are Not embedded");
+				}
+				break;
 		}
 	}while(printf("\nEnter option 1/2"));
 	getch();
@@ -172,7 +172,7 @@ int Embedded_String(int Embedded_String,char Buffer[])
 					printf("\n");
 				}
 				printf("%c",Buffer[k]);
-	        }
+	        	}
 		}
 	   return 1;
 	}
